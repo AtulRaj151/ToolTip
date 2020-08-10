@@ -9,4 +9,11 @@
   width: 143px;
   text-align: center;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+.download img {
+  height: inherit;
+}
+.rr {
+  background-color: #e91e63;
 }

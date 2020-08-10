@@ -35,7 +35,7 @@
 
 .bottom::after,
 .bottom::before {
-  margin-top: -54%;
+  margin-top: -40%;
   left: 50%;
 }
 
@@ -43,7 +43,7 @@
 
 .left {
   bottom: -32%;
-  left: -55%;
+  left: -64%;
 }
 
 .left::before {
@@ -57,17 +57,17 @@
 /* right tool tip */
 
 .right {
-  left: 157%;
+  left: 170%;
   bottom: -32%;
 }
 
 .right::after {
-  left: -8%;
+  left: -4%;
   top: 33%;
 }
 
 .right::before {
-  left: -8%;
+  left: -4%;
   margin-top: -27%;
 }
 
