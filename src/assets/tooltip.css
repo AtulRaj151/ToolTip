@@ -1,0 +1,188 @@
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
+.container {
+  font-size: 1.7em;
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+}
+
+.container:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  border-radius: 15px;
+  position: absolute;
+  width: max-content;
+  transform: translate(-50%, 0);
+  display: none;
+}
+/* top tooltip */
+.top {
+  bottom: 139%;
+  left: 50%;
+}
+.top::after,
+.top::before {
+  left: 50%;
+}
+
+/* bottom tooltip */
+.bottom {
+  left: 50%;
+  top: 145%;
+}
+
+.bottom::after,
+.bottom::before {
+  margin-top: -54%;
+  left: 50%;
+}
+
+/* left tool tip */
+
+.left {
+  bottom: -32%;
+  left: -55%;
+}
+
+.left::before {
+  left: 86%;
+  margin-top: -27%;
+}
+.left::after {
+  left: 86%;
+  top: 34%;
+}
+/* right tool tip */
+
+.right {
+  left: 157%;
+  bottom: -32%;
+}
+
+.right::after {
+  left: -8%;
+  top: 33%;
+}
+
+.right::before {
+  left: -8%;
+  margin-top: -27%;
+}
+
+.tooltip::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.tooltip::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.bottom::after {
+  animation: move-top-bottom 1.5s;
+}
+
+.bottom::before {
+  top: 77%;
+  animation: move-reverse-top-bottom 1.5s;
+}
+
+.top::after {
+  animation: move-top-bottom 1.5s;
+}
+
+.top::before {
+  top: 77%;
+  animation: move-reverse-top-bottom 1.5s;
+}
+
+@keyframes move-top-bottom {
+  from {
+    left: 12%;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes move-reverse-top-bottom {
+  from {
+    left: 80%;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+/* left animation */
+
+.left::after {
+  animation: move-left 1.5s;
+}
+
+.left::before {
+  margin-top: 5%;
+  animation: move-reverse-left 1.5s;
+}
+@keyframes move-left {
+  from {
+    top: 55%;
+  }
+
+  to {
+    top: 34%;
+  }
+}
+
+@keyframes move-reverse-left {
+  from {
+    margin-top: -6%;
+  }
+
+  to {
+    margin-top: 5%;
+  }
+}
+
+/* right animation */
+.right::after {
+  animation: move-right 1.5s;
+}
+
+.right::before {
+  margin-top: 5%;
+  animation: move-reverse-right 1.5s;
+}
+
+@keyframes move-right {
+  from {
+    top: 53%;
+  }
+
+  to {
+    top: 34%;
+  }
+}
+
+@keyframes move-reverse-right {
+  from {
+    margin-top: -5%;
+  }
+
+  to {
+    margin-top: 5%;
+  }
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.download {
+  height: 39px;
+  border: 1px solid white;
+  color: white;
+  background-color: lightseagreen;
+  border-radius: 9px;
+  width: 143px;
+  text-align: center;
+  font-size: 1.5rem;
+}
