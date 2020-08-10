@@ -9,7 +9,7 @@
 .container:hover .tooltip {
   display: block;
 }
-
+/* tooltip design */
 .tooltip {
   border-radius: 15px;
   position: absolute;
@@ -89,7 +89,7 @@
   z-index: -1;
   transform: rotate(45deg);
 }
-
+/* animations */
 .bottom::after {
   animation: move-top-bottom 1.5s;
 }

@@ -2,7 +2,9 @@ import React from 'react';
 import '../assets/button.css';
 
 function Button(props) {
-  console.log(props.isMouseOver);
+  //   console.log(props.isMouseOver);
+
+  // conditional Rendering
   if (props.isMouseOver) {
     return <div className="download">Download</div>;
   } else {

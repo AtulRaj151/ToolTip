@@ -19,12 +19,15 @@ class App extends React.Component {
     });
   };
 
+  // function to change state when mouse is on the button
+
   handleMouseOver = () => {
     this.setState({
       isMouseOver: false,
     });
   };
 
+  // function to change state when mouse is on the button
   handleMouseLeave = () => {
     this.setState({
       isMouseOver: true,
